@@ -1,0 +1,13 @@
+<h1>Destination Show</h1>
+<h3><%=@destination.name%></h3>
+<ul>
+<%new_array = []%>
+<%@destination.posts.each do |p|%>
+<%new_array << p.title%>
+<%new_array.reverse%>
+<%new_array[0..5].each do |t|%>
+<%=t%>
+<%end%>
+<%end%>
+
+</ul>

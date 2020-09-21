@@ -1,0 +1,6 @@
+<h1>Post Show page</h1>
+<ul>
+<li><%=@post.title%></li>
+<li><%=link_to @post.blogger.name, blogger_path(@post.blogger)%></li>
+<li><%=link_to @post.destination.name, destination_path(@post.destination)%></li>
+</ul>

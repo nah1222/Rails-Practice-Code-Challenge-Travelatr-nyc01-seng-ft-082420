@@ -1,6 +1,6 @@
 <h1>Destination Index</h1>
 <ul>
 <%@destinations.each do |d|%>
-<li><%=link_to d.name, destinations_path(d)%></li>
+<li><%=link_to d.name, destination_path(d)%></li>
 <%end%>
 </ul>
